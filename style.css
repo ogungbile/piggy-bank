@@ -1,0 +1,34 @@
+body{
+    margin: 0  auto ;
+}
+.tag1{
+    width: 100% ;
+    height: 180px;
+    background: lightblue;
+    text-align: center;
+    line-height: 100px;
+}
+.tag2{
+    width: 30%;
+    height: 440px;
+    background: blue;
+    float: left;
+    color: white;
+    padding: 8px;
+
+}
+
+.tag2 ul li{
+    margin-top: 10px;
+    list-style: none;
+}
+
+.tag3{
+    width: 70%;
+    height: 440px;
+    background:lightgray;
+    float : left;
+}
+h2{
+    line-height: 100px;
+}
