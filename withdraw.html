@@ -28,13 +28,13 @@
   <body>
       <div class="container-fluid">
     <div class = "tag1">
-        <img src="logo.png" alt="money is secure"  width = "30">
+        <img src="logo.png" alt="money is secure"  width = "45">
         <h2> Money Box financial Solution</h2>
 
 </div>
 <div class = "tag2">
     <ul>
-        <li><a href="index.html" >View accounts</a></li>
+        <li><a href="index.html" >View Accounts</a></li>
         <li><a href="create.html" >Create an Account</a></li>
         <li><a href="withdraw.html">Withdraw</a></li>
         <li><a href="deposit.html">Deposit</a></li>
@@ -43,21 +43,35 @@
 
 </div>
 <div class = "tag3 p-2">
-  <h2 class="text-center">Accounts</h2>
-  <table class="table table-striped">
-    <thead>
-      <tr>
-        <th>S/N</th>
-        <th>Fullname</th>
-        <th>Email</th>
-        <th>Account no.</th>
-        <th>Account Name</th>
-        <th>Account Bal.</th>
-      </tr>
-    </thead>
-    <tbody id="customers"></tbody>
-
-  </table>
+  
+   <h2 class="text-center">Withdraw your Cash</h2>
+    <p class="text-center">Fill the form below to complete your transaction.</p>
+    <hr class="my-3">
+    <div class="justify-content-center mt-5">
+      <p id="w_success"></p>
+      <form method="post">
+        <div class="row justify-content-center" style="width: 100%" m-2>
+          <div class="col-3">
+            <select class="form-control" id="withdraw">
+              
+            </select>
+          </div>
+          <div class="col-3">
+            <input type="text" name="account_name" class="form-control" id="acc_name_withdraw" placeholder="Customer account name will appear here">
+          </div>
+          <div class="col-3">
+            <input type="text" name="amount"  oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"  class="form-control" id="amount_withdraw" placeholder="Enter an amount to withraw">
+          </div>
+          <input type="hidden" id="w_email">
+          <input type="hidden" id="w_acc_num">
+          <input type="hidden" id="w_bal">
+          <div class="col-3">
+            <button name="withdraw" class="btn btn-success" id="withdraw_btn">Withdraw</button>
+          </div>
+        </div>
+      </form>
+      
+    </div>
   
 
 </div>

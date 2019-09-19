@@ -34,7 +34,7 @@
 </div>
 <div class = "tag2">
     <ul>
-        <li><a href="index.html" >View accounts</a></li>
+        <li><a href="index.html" >View Accounts</a></li>
         <li><a href="create.html" >Create an Account</a></li>
         <li><a href="withdraw.html">Withdraw</a></li>
         <li><a href="deposit.html">Deposit</a></li>
@@ -43,23 +43,27 @@
 
 </div>
 <div class = "tag3 p-2">
-  <h2 class="text-center">Accounts</h2>
-  <table class="table table-striped">
-    <thead>
-      <tr>
-        <th>S/N</th>
-        <th>Fullname</th>
-        <th>Email</th>
-        <th>Account no.</th>
-        <th>Account Name</th>
-        <th>Account Bal.</th>
-      </tr>
-    </thead>
-    <tbody id="customers"></tbody>
-
-  </table>
-  
-
+  <h2 class="text-center">View an Account's Statement</h2>
+  <p class="text-center">Choose an account to view it's statement.</p>
+  <hr class="my-3">
+  <div class="justify-content-center mt-5">
+    <form method="post">
+      <div class="row justify-content-center" style="width: 100%" m-2>
+        <div class="col-3">
+          <select class="form-control" id="statement">
+          </select>
+        </div>
+        <div class="col-3">
+          <input type="text" name="account_name" class="form-control"  id="acc_name_statement" placeholder="Customer account name will appear here">
+        </div>
+        <div class="col-3">
+          <button id="statement_btn" class="btn btn-success" name="deposit">View Statement</button>
+        </div>
+      </div>
+    </form>
+    
+  </div>
+  <p id="stmt"></p>
 </div>
         
 </div>

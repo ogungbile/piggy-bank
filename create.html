@@ -43,22 +43,43 @@
 
 </div>
 <div class = "tag3 p-2">
-  <h2 class="text-center">Accounts</h2>
-  <table class="table table-striped">
-    <thead>
-      <tr>
-        <th>S/N</th>
-        <th>Fullname</th>
-        <th>Email</th>
-        <th>Account no.</th>
-        <th>Account Name</th>
-        <th>Account Bal.</th>
-      </tr>
-    </thead>
-    <tbody id="customers"></tbody>
-
-  </table>
+  <h2 class="text-center">Create an Account</h2>
   
+
+  <form method="post" action="localhost:3000/customers">
+    <div class="row">
+      <div class="col-12"><p id="success"></p></div>
+    	<!-- <div class="col-6">
+		  	<div class="form-group pt-2">
+		  		<input type="text" name="" id="id" placeholder="Enter the id" class="form-control">
+		  	</div>
+	  	</div> -->
+	  	<div class="col-6">
+		  	<div class="form-group pt-2">
+		  		<input type="text" name="" id="fullname" placeholder="Enter your fullname" class="form-control" required="">
+		  	</div>
+		</div>
+		<div class="col-6">
+		  	<div class="form-group pt-2">
+		  		<input type="email" name="" id="email" placeholder="Enter your email address" class="form-control" required="">
+		  	</div>
+		</div>
+		<div class="col-6">
+		  	<div class="form-group pt-2">
+		  		<input type="text" name="" id="acc_num" placeholder="Enter the account number" class="form-control" required="">
+		  	</div>
+		</div>
+		<div class="col-6">
+		  	<div class="form-group pt-2">
+		  		<input type="text" name="" id="acc_name" placeholder="Enter the account name" class="form-control" required="">
+		  	</div>
+		</div>
+		<div class="col-12">
+			<button type="submit" id="submit" class="btn btn-success justify-content-center text-center" style="width: 100%">Create Account</button>
+		</div>
+  	</div>
+  	
+  </form>
 
 </div>
         

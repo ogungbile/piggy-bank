@@ -34,8 +34,8 @@
 </div>
 <div class = "tag2">
     <ul>
-        <li><a href="index.html" >View accounts</a></li>
-        <li><a href="create.html" >Create an Account</a></li>
+        <li><a href="index.html" >View Accounts</a></li>
+        <li><a href="create.html" >Create a Piggy account</a></li>
         <li><a href="withdraw.html">Withdraw</a></li>
         <li><a href="deposit.html">Deposit</a></li>
         <li  id="det"><a href="statement.html">View Statement</a></li>
@@ -43,23 +43,33 @@
 
 </div>
 <div class = "tag3 p-2">
-  <h2 class="text-center">Accounts</h2>
-  <table class="table table-striped">
-    <thead>
-      <tr>
-        <th>S/N</th>
-        <th>Fullname</th>
-        <th>Email</th>
-        <th>Account no.</th>
-        <th>Account Name</th>
-        <th>Account Bal.</th>
-      </tr>
-    </thead>
-    <tbody id="customers"></tbody>
-
-  </table>
-  
-
+  <h2 class="text-center">Deposit your Cash</h2>
+  <p class="text-center">Fill the form below to complete your transaction.</p>
+  <hr class="my-3">
+  <div class="justify-content-center mt-5">
+    <p id="d_success"></p>
+    <form method="post">
+      <div class="row justify-content-center" style="width: 100%" m-2>
+        <div class="col-3">
+          <select class="form-control" id="deposit">
+          </select>
+        </div>
+        <div class="col-3">
+          <input type="text" name="account_name" class="form-control"  id="acc_name_deposit" placeholder="Customer account name will appear here">
+        </div>
+        <div class="col-3">
+          <input type="text" name="amount"  class="form-control" id="amount_deposit" placeholder="Enter an amount to deposit">
+        </div>
+        <input type="hidden" id="d_email">
+        <input type="hidden" id="d_acc_num">
+        <input type="hidden" id="d_bal">
+        <div class="col-3">
+          <button id="deposit_btn" class="btn btn-success" name="deposit">Deposit</button>
+        </div>
+      </div>
+    </form>
+    
+  </div>
 </div>
         
 </div>

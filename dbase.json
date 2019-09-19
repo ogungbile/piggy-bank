@@ -1,0 +1,100 @@
+{
+  "customers": [
+    {
+      "id": 1,
+      "fullname": "Adekunle Yinka",
+      "email": "gbenga@gmail.com",
+      "account_num": "1234567890",
+      "account_name": "Adekunle Gbenga",
+      "balance": "83350"
+    },
+    {
+      "id": 2,
+      "fullname": "Muyiwa Joshua",
+      "email": "muy@yahoo.com",
+      "account_num": "9867431265",
+      "account_name": "Muyiwa Joshua",
+      "balance": "2000"
+    },
+    {
+      "id": 3,
+      "fullname": "Babalola",
+      "email": "babalola@yahoo.com",
+      "account_num": "8088825331",
+      "account_name": "Oluwasegunfunmi",
+      "balance": "1050"
+    }
+  ],
+  "transactions": [
+    {
+      "id": 1,
+      "cust_id": 12,
+      "email": "gbenga@gmail.com",
+      "account_num": "1234567890",
+      "account_name": "Adekunle Gbenga",
+      "amount": 45,
+      "type": "deposit",
+      "balance": 10
+    },
+    {
+      "id": 2,
+      "cust_id": "1",
+      "email": "gbenga@gmail.com",
+      "account_num": "1234567890",
+      "account_name": "1234567890",
+      "amount": "500",
+      "type": "withdrawal",
+      "balance": "83000"
+    },
+    {
+      "id": 3,
+      "cust_id": "1",
+      "email": "gbenga@gmail.com",
+      "account_num": "1234567890",
+      "account_name": "1234567890",
+      "amount": "350",
+      "type": "deposit",
+      "balance": "83350"
+    },
+    {
+      "id": 4,
+      "cust_id": "2",
+      "email": "muy@yahoo.com",
+      "account_num": "9867431265",
+      "account_name": "9867431265",
+      "amount": "100000",
+      "type": "deposit",
+      "balance": "100000"
+    },
+    {
+      "id": 5,
+      "cust_id": "2",
+      "email": "muy@yahoo.com",
+      "account_num": "9867431265",
+      "account_name": "9867431265",
+      "amount": "98000",
+      "type": "withdrawal",
+      "balance": "2000"
+    },
+    {
+      "id": 6,
+      "cust_id": "3",
+      "email": "babalola@yahoo.com",
+      "account_num": "8088825331",
+      "account_name": "8088825331",
+      "amount": "1200",
+      "type": "deposit",
+      "balance": "1200"
+    },
+    {
+      "id": 7,
+      "cust_id": "3",
+      "email": "babalola@yahoo.com",
+      "account_num": "8088825331",
+      "account_name": "8088825331",
+      "amount": "150",
+      "type": "withdrawal",
+      "balance": "1050"
+    }
+  ]
+}
