@@ -1,0 +1,12 @@
+{
+
+    "transaction": [
+        {"id":1, "details": "withdrawal", "amount":300, "balance":300
+
+        },
+
+        {"id":2, "details": "deposit", "amount":100, "balance":400
+
+        }
+    ]
+}
